@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				background: url(zp/xsy.jpg);
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+			}
+
+			h1 {
+				width: 150px;
+				margin-left: 150px;
+				font-size: 50px;
+				list-style: 50px;
+				letter-spacing: 0.2em;
+				padding: 0.2em;
+				text-align: center;
+			}
+
+			#b10 {
+				border-left: 10px solid #faeb98;
+			}
+
+			#b10:hover {
+				transition: 1s;
+				background: linear-gradient(to right, #faeb98, lightyellow);
+				opacity: 0.6;
+			}
+
+			#b20 {
+				border-left: 10px solid #78d4e0;
+			}
+
+			#b20:hover {
+				background: linear-gradient(to right, #78d4e0, lightcyan);
+				transition: 1s;
+				opacity: 0.6;
+			}
+
+			#b30 {
+				border-left: 10px solid #f161ab;
+			}
+
+			#b30:hover {
+				background: linear-gradient(to right, #f161ab, pink);
+				transition: 1s;
+				opacity: 0.6;
+			}
+
+			#b40 {
+				border-left: 10px solid #ff2d50;
+			}
+
+			#b40:hover {
+				background: linear-gradient(to right, #ff2d50, lightcoral);
+				transition: 1s;
+			}
+
+			#b50 {
+				border-left: 10px solid black;
+				width: 300px;
+			}
+
+			#b50:hover {
+				background: linear-gradient(to right, black, white);
+				transition: 1s;
+			}
+
+			#b0 {
+				padding: 50px;
+				margin-left: 90px;
+			}
+
+			#b00 {
+				letter-spacing: 0.4em;
+				line-height: 40px;
+			}
+
+			#b00>a {
+				color: pink;
+				text-decoration: none;
+				font-size: 40px;
+			}
+
+			#b00>a:hover {
+				color: aqua;
+				text-shadow: 2px 3px 1px aqua;
+			}
+
+			#b0010 {
+				opacity: 0;
+			}
+
+			#b0010:hover {
+				background: red;
+				transition: 1s;
+				box-shadow: -5px -5px 5px 1px red;
+				opacity: 1;
+			}
+
+			#b11 {
+				margin-left: 180px;
+			}
+
+			#b12,
+			#b13 {
+				transform: translate(500px, 0px);
+				letter-spacing: 0.2em;
+				width: 290px;
+				font-size: 30px;
+				opacity: 0;
+				text-align: center;
+			}
+
+			#b12:hover,
+			#b13:hover {
+				opacity: 1;
+				background: #ff2d50;
+				background: red;
+				transition: 1s;
+				box-shadow: -5px -5px 5px 1px red;
+			}
+
+			#b200 {
+				margin-left: 250px;
+			}
+
+			#b2001 {
+				height: 550px;
+				display: inline-block;
+				background: rgba(188, 175, 228, 0.2);
+				vertical-align: top;
+				margin-left: 100px;
+				font-size: 35px;
+				line-height: 1.5;
+				color: rgba(200, 117, 83, 0.5);
+			}
+
+			#b2001>b {
+				font-size: 15px;
+				font-weight: normal;
+				margin-left: 40px;
+			}
+
+			#b20010,
+			#b20011,
+			#b20012,
+			#b20013,
+			#b20014 {
+				height: 40px;
+				box-sizing: border-box;
+				font-size: 20px;
+				transition: 1s;
+				letter-spacing: 0.2em;
+				background: rgba(223, 159, 190, 0);
+				margin-left: 10px;
+			}
+
+			#b20010:hover,
+			#b20011:hover,
+			#b20012:hover,
+			#b20013:hover,
+			#b20014:hover {
+				font-size: 30px;
+				background: rgba(223, 130, 210, 0.6);
+				color: rgba(200, 117, 83, 1);
+				text-shadow: -5px 5px 5px rgba(223, 130, 210, 0.8);
+			}
+
+			#b20010:hover::before,
+			#b20011:hover::before,
+			#b20012:hover::before,
+			#b20013:hover::before,
+			#b20014:hover::before {
+				content: ">";
+			}
+
+			#b2002 {
+				width: 1100px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				transform: translate(-350px, -50px);
+			}
+
+			#b20020:hover::after {
+				content: "<";
+				padding-left: 10px;
+				color: aqua;
+			}
+
+			#b20020:hover::before {
+				content: ">";
+				padding-right: 10px;
+				color: aqua;
+			}
+
+			#b20020 {
+				width: 300px;
+				height: 50px;
+				letter-spacing: 0.2em;
+				text-align: center;
+				margin-left: 1000px;
+				font-size: 20px;
+			}
+
+			#c20021 {
+				font-size: 20px;
+				color: rgb(185, 167, 226);
+			}
+
+			#b20020:hover {
+				transition: 1s;
+				color: white;
+				text-shadow: 3px 3px 3px white;
+			}
+
+			#b20021 {
+				text-decoration: none;
+			}
+
+			#b20021:hover {
+				color: white;
+				text-shadow: 0px 0px 6px white;
+			}
+
+
+			#b300 {
+				margin-left:250px;
+			}
+
+			#b3000 {
+				font-size: 50px;
+				letter-spacing: 0.4em;
+				margin: 30px 80px 30px 150px;
+				color: thistle;
+			}
+
+			.b400 {
+				background: #78d4e0;
+				display: inline-block;
+				width: 400px;
+				vertical-align: top;
+				height: 800px;
+				margin-left: 10px;
+				border-radius: 5px;
+				background: linear-gradient(60deg, #408de0, #8ecee1);
+			}
+
+			.b400:hover {
+				box-shadow: 0 5px 300px -10px gray;
+				background: linear-gradient(60deg, #e01d41, #8ecee1);
+				transform: translateY(-10px);
+				transition: 1s;
+			}
+			#b401{
+				margin-left: 200px;
+			}
+			.b4001 {
+				text-align: center;
+				font-size: 30px;
+				letter-spacing: 1em;
+			}
+
+			.b4002 {
+				font-size: 20px;
+				letter-spacing: 0.3em;
+				line-height: 40px;
+				text-indent: 2em;
+				height: 180px;
+			}
+
+			#b4004 {
+				letter-spacing: 0.5em;
+			}
+
+			.b4006 {
+				height: 70px;
+				padding-left: 55px;
+			}
+
+			#b500 {
+				width: 1400px;
+				height: 800px;
+				overflow: hidden;
+			}
+			#b5000{
+				margin-left: 200px;
+			}
+			#b5002 {
+				transform: translate(750px, -400px);
+			}
+
+			#b5003 {
+				transform: translate(750px, -335px);
+			}
+
+			#b5007 {
+				transform: translate(590px, -450px);
+				font-size: 50px;
+			}
+
+			#b5008 {
+				transform: translate(1050px, -570px);
+				font-size: 50px;
+			}
+
+			#b5009 {
+				transform: translate(1050px, -975px);
+				font-size: 50px;
+			}
+
+			#b50030 {
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+				transform: translate(0, -655px);
+			}
+
+			#b50030:hover {
+				transform: translate(750px, -655px) rotate(720deg);
+				transition: 3s;
+			}
+
+			#b50040 {
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+				transform: translate(-125px, -655px);
+			}
+
+			#b50040:hover {
+				transform: translate(500px, -655px) rotate(720deg);
+				transition: 3s;
+			}
+
+			#b50050 {
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+				transform: translate(-250px, -655px);
+			}
+
+			#b50050:hover {
+				transform: translate(250px, -655px) rotate(720deg);
+				transition: 3s;
+			}
+
+			#b50060 {
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+				transform: translate(-375px, -655px);
+			}
+
+			#b50060:hover {
+				transform: translate(250px, -655px) rotate(720deg);
+				transition: 3s;
+			}
+
+			#b61 {
+				font-size: 20px;
+				background: rgba(223, 130, 210, 0.2);
+				color: #408de0;
+			}
+			#b61:hover{
+				background: rgba(223, 130, 210, 0.6);
+			}
+			#b62{
+				width: 50px;
+				height: 130px;
+			}
+			#b63{
+				font-size: 30px;
+			}
+			#b70 {
+				text-align: right;
+				background: orange;
+				position: fixed;
+				right: 0;
+				top: 600px;
+			}
+
+			table {
+				width: 900px;
+				height: 600px;
+				margin-left: 900px;
+				table-layout: fixed;
+				border-collapse: collapse;
+			}
+
+			thead {
+				background: rgba(188, 175, 228, 0.2);
+				height: 100px;
+			}
+
+			tbody {
+				background: rgba(223, 159, 190, 0.4);
+				color: rgba(38, 33, 28);
+				text-align: center;
+			}
+
+			textarea {
+				resize: none;
+				vertical-align: top;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="b0">
+			<div id="b00">
+				<img src="zp/tubiao.png" width="100" class="biao" id="b000">
+				<a href="#b10" id="b001">首页</a>
+				<a href="#b20" id="b002">新闻</a>
+				<a href="#b30" id="b003">角色</a>
+				<a href="#b40" id="b004">剧情</a>
+				<a href="#b50" id="b005">视听中心</a>
+				<a href="./dl.html" target="_blank" id="b006">登录</a>
+				<a href="https://www.miyoushe.com/bh3/" target="_blank" id="b007">社区</a>
+				<a href="https://mihoyo.tmall.com/p/bh3.htm?spm=a1z10.1-b-s.w5002-16362476162.5.23fd115cvpyQzc"
+					target="_blank" id="b008">商城</a>
+				<a href="https://webstatic.mihoyo.com/payment/bh3/index.html?utm_source=official_web#/" target="_blank"
+					id="b009">充值中心</a>
+				<br><i id="b0010">为世界上所有的美好而战</i>
+			</div>
+		</div>
+		<h1 id="b10">首页</h1>
+		<div>
+			<div>
+				<p id="b12">希望不熄薪炎永燃</p>
+			</div>
+			<video src="sp/xc.mp4" controls width="1120" id="b11" muted autoplay></video>
+			<div>
+				<p id="b13">以此烈火斩无不断</p>
+			</div>
+		</div>
+		<h1 id="b20">新闻</h1>
+		<div id="b200">
+			<img src="zp/xinwen.webp" id="b2000" width="400px">
+			<div id="b2001">
+				<b>2024/01/31</b>
+				<div id="b20010">
+					<spen>公告补给概率公示</spen>
+				</div>
+				<b>2024/01/10</b>
+				<div id="b20011">
+					<spen>《崩坏3》同人衍生作品创作指引V3.0</spen>
+				</div>
+				<b>2024/06/03</b>
+				<div id="b20012">
+					<spen>封号名单(2024年6月3日)</spen>
+				</div>
+				<b>2024/06/01</b>
+				<div id="b20013">
+					<spen>活动畅游吼姆世界-挑战赛</spen>
+				</div>
+				<b>2024/05/29</b>
+				<div id="b20014">
+					<spen>精准补给|潘多拉之盒18th逐火往事</spen>
+				</div>
+			</div>
+			<div id="b2002">
+				<div id="b20020"><a href="https://bh3.mihoyo.com/news/693" id="b20021">查看更多</a></div>
+			</div>
+		</div>
+		<h1 id="b30">日历</h1>
+		<table border="1" id="b300">
+			<caption id="b3000">女武神的生日</caption>
+			<thead>
+				<tr>
+					<th>日</th>
+					<th>一</th>
+					<th>二</th>
+					<th>三</th>
+					<th>四</th>
+					<th>五</th>
+					<th>六</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td id="300000"><a
+							href="https://www.bilibili.com/video/BV1JH4y1y7Qb/?spm_id_from=333.337.search-card.all.click&vd_source=e6f72b27f4693ff2d068e16b674c2499"><img
+								src="zp/qynsr.webp" width="50px"></a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+					<td><a
+							href="https://www.bilibili.com/video/BV1wc41117tG/?spm_id_from=333.337.search-card.all.click"><img
+								src="zp/glxsr.webp" alt="" width="50px"></a></td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td>30</td>
+					<td>31</td>
+					<td colspan="4">生日快乐</td>
+				</tr>
+			</tbody>
+		</table>
+		<h1 id="b40">角色</h1>
+		<div id="b40003">
+			<div class="b400" id="b401">
+				<img src="zp/yayi.webp" width="400px" id="b4000">
+				<p class="b4001">芽衣</p>
+				<p class="b4002" id="b4005">逆熵ME社前社长雷电龙马的独生女，北辰一刀流传人，原千羽学园高中部二年级学生，后为圣芙蕾雅学园学生，天命B级女武神，第五女武神部队成员￼。
+				</p>
+				<audio src="yl/yayi.mp3" controls class="b4006"></audio>
+			</div>
+			<div class="b400">
+				<img src="zp/kiana1.webp" width="400px" id="b4000">
+				<p class="b4001">琪亚娜</p>
+				<p class="b4002">
+					天命的律者宿体实验体K-423号，第二律者西琳的延伸，千羽学园高中部学生，圣芙蕾雅学园学生，天命B级女武神。</p>
+				<audio src="yl/Da Capo.mp3" controls class="b4006"></audio>
+			</div>
+			<div class="b400">
+				<img src="zp/yaya.webp" width="400px" id="b4001">
+				<p class="b4001" id="b4004">布洛妮娅·扎伊切克</p>
+				<p class="b4002">
+					因第二次崩坏成为孤儿，被培养为著名杀手乌拉尔银狼，一次行动失败后被可可利亚收养。在可可利亚孤儿院中，布洛妮娅结识了希儿。</p>
+				<audio src="yl/Cyberangel.mp3" controls class="b4006"></audio>
+			</div>
+		</div>
+		<h1 id="b50">视听中心</h1>
+		<div id="b500">
+			<div id="b5000">
+				<div id="b5001" class="b5004">
+					<img src="zp/1.png" width="700px">
+				</div>
+				<div id="b5002" class="b5004">
+					<img src="zp/3.png" id="b50020" width="400px" height="95px">
+				</div>
+				<div id="b5003" class="b5004">
+					<img src="zp/2.jpg" id="b50010" width="400px">
+				</div>
+				<div>
+					<p id="b5007">视频</p>
+				</div>
+				<div>
+					<p id="b5008">壁纸</p>
+				</div>
+				<div>
+					<p id="b5009">漫画</p>
+				</div>
+				<div>
+					<img src="zp/4.jpg" id="b50030" width="250px">
+					<img src="zp/5.jpg" id="b50040" width="250px">
+					<img src="zp/6.jpg" id="b50050" width="250px">
+					<img src="zp/7.jpg" id="b50060" width="250px">
+				</div>
+			</div>
+		</div>
+		<div>
+			<hr>
+			<div id="b63">留言板</div>
+			<textarea id="b61" cols="130" rows="5" placeholder="留下你美好的故事"></textarea>
+			<input type="submit" id="b62"><br>
+		</div>
+		<div>
+			<a href="#" id="b70"><img src="zp/hui.gif" width="100px"></a>
+		</div>
+	</body>
+</html>
